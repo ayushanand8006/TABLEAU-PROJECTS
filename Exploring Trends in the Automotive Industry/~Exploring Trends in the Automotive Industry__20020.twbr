@@ -1,0 +1,1814 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xml:base='https://vizhub' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://localhost/workbooks/Cars_Data?rev=1.5' id='Cars_Data' path='/workbooks' revision='1.6' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Car dekho' inline='true' name='federated.0txxlry03zd4a510yl8910zqodeq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Car dekho' name='textscan.1wb1rsb16az8gw125rpgj026tf2l'>
+            <connection class='textscan' directory='C:/Users/swapn/Downloads' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wb1rsb16az8gw125rpgj026tf2l' name='Car dekho.csv' table='[Car dekho#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Name' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='integer' name='selling_price' ordinal='2' />
+            <column datatype='integer' name='km_driven' ordinal='3' />
+            <column datatype='string' name='fuel' ordinal='4' />
+            <column datatype='string' name='seller_type' ordinal='5' />
+            <column datatype='string' name='transmission' ordinal='6' />
+            <column datatype='string' name='owner' ordinal='7' />
+            <column datatype='string' name='mileage' ordinal='8' />
+            <column datatype='string' name='engine' ordinal='9' />
+            <column datatype='string' name='max_power' ordinal='10' />
+            <column datatype='string' name='torque' ordinal='11' />
+            <column datatype='integer' name='seats' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selling_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[selling_price]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>selling_price</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>km_driven</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[km_driven]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>km_driven</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fuel]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>fuel</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seller_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[seller_type]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>seller_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transmission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transmission]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>transmission</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>owner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[owner]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>owner</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mileage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mileage]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>mileage</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>engine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[engine]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>engine</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_power</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[max_power]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>max_power</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>torque</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[torque]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>torque</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seats</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[seats]</local-name>
+            <parent-name>[Car dekho.csv]</parent-name>
+            <remote-alias>seats</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Car dekho.csv' datatype='table' name='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' role='measure' type='quantitative' />
+      <column caption='Engine' datatype='string' name='[engine]' role='dimension' type='nominal' />
+      <column caption='Fuel' datatype='string' name='[fuel]' role='dimension' type='nominal' />
+      <column caption='Km Driven' datatype='integer' name='[km_driven]' role='measure' type='quantitative' />
+      <column caption='Max Power' datatype='string' name='[max_power]' role='dimension' type='nominal' />
+      <column caption='Mileage' datatype='string' name='[mileage]' role='dimension' type='nominal' />
+      <column caption='Owner' datatype='string' name='[owner]' role='dimension' type='nominal' />
+      <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+      <column caption='Seller Type' datatype='string' name='[seller_type]' role='dimension' type='nominal' />
+      <column caption='Selling Price' datatype='integer' name='[selling_price]' role='measure' type='quantitative' />
+      <column caption='Torque' datatype='string' name='[torque]' role='dimension' type='nominal' />
+      <column caption='Transmission' datatype='string' name='[transmission]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[selling_price]' derivation='Avg' name='[avg:selling_price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[selling_price]' derivation='Sum' name='[sum:selling_price:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/TEMP_0kkw87i0yfibwm1160pvb04fk9cl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1470</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>selling_price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[selling_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>selling_price</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>499</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>km_driven</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[km_driven]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>km_driven</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>519</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fuel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fuel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fuel</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seller_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[seller_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>seller_type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transmission</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transmission]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transmission</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>owner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[owner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>owner</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mileage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mileage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mileage</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>409</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>engine</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[engine]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>engine</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>123</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_power</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[max_power]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_power</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>320</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>torque</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[torque]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>torque</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>429</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seats</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[seats]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>seats</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Car dekho.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0txxlry03zd4a510yl8910zqodeq]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0txxlry03zd4a510yl8910zqodeq].[avg:selling_price:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0txxlry03zd4a510yl8910zqodeq].[sum:selling_price:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Car dekho.csv' id='Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE'>
+            <properties context=''>
+              <relation connection='textscan.1wb1rsb16az8gw125rpgj026tf2l' name='Car dekho.csv' table='[Car dekho#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Name' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='integer' name='selling_price' ordinal='2' />
+                  <column datatype='integer' name='km_driven' ordinal='3' />
+                  <column datatype='string' name='fuel' ordinal='4' />
+                  <column datatype='string' name='seller_type' ordinal='5' />
+                  <column datatype='string' name='transmission' ordinal='6' />
+                  <column datatype='string' name='owner' ordinal='7' />
+                  <column datatype='string' name='mileage' ordinal='8' />
+                  <column datatype='string' name='engine' ordinal='9' />
+                  <column datatype='string' name='max_power' ordinal='10' />
+                  <column datatype='string' name='torque' ordinal='11' />
+                  <column datatype='integer' name='seats' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_4135BEC051AE491AB12458C957717D6E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_385396684F50413888C6951BE95254A8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 5' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_78E1FAC9EBEF483B90121BB7BFBEF20B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_9D2BAD399AD44D218320929DA45A1540]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 8' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_DB991D5F60A24FE9AF86A49BA724516C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 6' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action6_72665AC501E94DB0B318B615503925DD]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 4' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 7 (generated)' name='[Action7_01B370A952744EA985C7297B78EF9B82]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 7' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 8 (generated)' name='[Action8_E079D80D5324480C84818D447B7D3C18]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 12' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Selling price of dealer by year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90210999?rev=' id='Sheet1' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[seller_type]' derivation='None' name='[none:seller_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+            <column caption='Seller Type' datatype='string' name='[seller_type]' role='dimension' type='nominal' />
+            <column caption='Selling Price' datatype='integer' name='[selling_price]' role='measure' type='quantitative' />
+            <column-instance column='[selling_price]' derivation='Sum' name='[sum:selling_price:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seller_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-scope' value='multi-mark' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0txxlry03zd4a510yl8910zqodeq].[sum:selling_price:qk]</rows>
+        <cols>[federated.0txxlry03zd4a510yl8910zqodeq].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{A5674706-94FD-4FBE-9B3A-4EFA1F6A7ECC}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Top 3 max power cars</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211007?rev=' id='Sheet10' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column caption='Max Power' datatype='string' name='[max_power]' role='dimension' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[max_power]' derivation='None' name='[none:max_power:nk]' pivot='key' type='nominal' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:max_power:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:max_power:nk]' member='&quot;282 bhp&quot;' />
+              <groupfilter function='member' level='[none:max_power:nk]' member='&quot;296.3bhp&quot;' />
+              <groupfilter function='member' level='[none:max_power:nk]' member='&quot;400 bhp&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:max_power:nk]</column>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0txxlry03zd4a510yl8910zqodeq].[none:Name:nk]' value='248' />
+            <format attr='width' field='[federated.0txxlry03zd4a510yl8910zqodeq].[none:max_power:nk]' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0txxlry03zd4a510yl8910zqodeq].[none:Name:nk] / [federated.0txxlry03zd4a510yl8910zqodeq].[none:max_power:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3A14E8D4-EE92-4EF5-85C7-30C7BF47E486}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Top 3 Mileage cars by transmission</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211006?rev=' id='Sheet11' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column caption='Mileage' datatype='string' name='[mileage]' role='dimension' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mileage]' derivation='None' name='[none:mileage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transmission]' derivation='None' name='[none:transmission:nk]' pivot='key' type='nominal' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+            <column caption='Transmission' datatype='string' name='[transmission]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:Name:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Name:nk]' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Maruti Alto 800 CNG LXI Optional&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:mileage:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:mileage:nk]' member='&quot;33.0 km/kg&quot;' />
+              <groupfilter function='member' level='[none:mileage:nk]' member='&quot;33.44 km/kg&quot;' />
+              <groupfilter function='member' level='[none:mileage:nk]' member='&quot;42.0 kmpl&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:mileage:nk]</column>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:Name:nk]</column>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]' value='120' />
+            <format attr='width' field='[federated.0txxlry03zd4a510yl8910zqodeq].[none:mileage:nk]' value='112' />
+            <format attr='width' field='[federated.0txxlry03zd4a510yl8910zqodeq].[none:Name:nk]' value='232' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk] / ([federated.0txxlry03zd4a510yl8910zqodeq].[none:mileage:nk] / [federated.0txxlry03zd4a510yl8910zqodeq].[none:Name:nk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C3EA38ED-505E-4705-8680-06959CCCA349}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Avg Kilometers driven by Fuel/Tramission car types</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211008?rev=' id='Sheet12' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column-instance column='[km_driven]' derivation='Avg' name='[avg:km_driven:qk]' pivot='key' type='quantitative' />
+            <column caption='Fuel' datatype='string' name='[fuel]' role='dimension' type='nominal' />
+            <column caption='Km Driven' datatype='integer' name='[km_driven]' role='measure' type='quantitative' />
+            <column-instance column='[fuel]' derivation='None' name='[none:fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transmission]' derivation='None' name='[none:transmission:nk]' pivot='key' type='nominal' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+            <column caption='Transmission' datatype='string' name='[transmission]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0txxlry03zd4a510yl8910zqodeq].[avg:km_driven:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0txxlry03zd4a510yl8910zqodeq].[avg:km_driven:qk]</rows>
+        <cols>([federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk] / [federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk])</cols>
+      </table>
+      <simple-id uuid='{04A6F9E3-5183-4851-9AA1-BEBBB0201403}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Count of cars per type of dealer</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211000?rev=' id='Sheet3' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column caption='Car dekho.csv' datatype='table' name='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[seller_type]' derivation='None' name='[none:seller_type:nk]' pivot='key' type='nominal' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+            <column caption='Seller Type' datatype='string' name='[seller_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' />
+              <color column='[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' />
+              <text column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seller_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{21380953-761C-4F42-B4E2-10FDAFA8A6CC}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Count of Automatic &amp; Manual cars</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211001?rev=' id='Sheet4' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column caption='Car dekho.csv' datatype='table' name='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transmission]' derivation='None' name='[none:transmission:nk]' pivot='key' type='nominal' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+            <column caption='Transmission' datatype='string' name='[transmission]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='cell' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-field' value='[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]</cols>
+      </table>
+      <simple-id uuid='{EA889D3F-B7A0-45B1-9233-8330A9A18520}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Selling price by Car Fuel type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211002?rev=' id='Sheet5' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column-instance column='[selling_price]' derivation='Avg' name='[avg:selling_price:qk]' pivot='key' type='quantitative' />
+            <column caption='Fuel' datatype='string' name='[fuel]' role='dimension' type='nominal' />
+            <column-instance column='[fuel]' derivation='None' name='[none:fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+            <column caption='Selling Price' datatype='integer' name='[selling_price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#7f7bb9' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.0654696226119995' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0txxlry03zd4a510yl8910zqodeq].[avg:selling_price:qk]</rows>
+        <cols>[federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk]</cols>
+      </table>
+      <simple-id uuid='{50B19B73-9EFF-4C8C-AA4D-9112223A7AD2}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Avg Selling price of Automatic &amp; Manual Cars</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211004?rev=' id='Sheet6' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column-instance column='[selling_price]' derivation='Avg' name='[avg:selling_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transmission]' derivation='None' name='[none:transmission:nk]' pivot='key' type='nominal' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+            <column caption='Selling Price' datatype='integer' name='[selling_price]' role='measure' type='quantitative' />
+            <column caption='Transmission' datatype='string' name='[transmission]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#7f7bb9' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]</rows>
+        <cols>[federated.0txxlry03zd4a510yl8910zqodeq].[avg:selling_price:qk]</cols>
+      </table>
+      <simple-id uuid='{A3BCFB8B-54DA-45C2-B306-34FADD469C47}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Count of Cars by Fuel Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211003?rev=' id='Sheet7' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column caption='Car dekho.csv' datatype='table' name='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' pivot='key' type='quantitative' />
+            <column caption='Fuel' datatype='string' name='[fuel]' role='dimension' type='nominal' />
+            <column-instance column='[fuel]' derivation='None' name='[none:fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='17' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#7f7bb9' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-scope' value='cell' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]</rows>
+        <cols>[federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk]</cols>
+      </table>
+      <simple-id uuid='{788CA369-1FFC-46D3-BC77-732182B49381}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Type of owners</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211005?rev=' id='Sheet8' path='/workbooks/Cars_Data' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+            <column caption='Car dekho.csv' datatype='table' name='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[owner]' derivation='None' name='[none:owner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+            <column caption='Owner' datatype='string' name='[owner]' role='dimension' type='nominal' />
+            <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' filter-group='3' included-values='in-range'>
+            <min>2</min>
+            <max>14</max>
+          </filter>
+          <slices>
+            <column>[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' />
+              <text column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:owner:nk]' />
+              <color column='[federated.0txxlry03zd4a510yl8910zqodeq].[none:owner:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CA7B3964-97F3-40F2-9F81-6682B5F9B0B5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location derived-from='https://localhost/workbooks/Cars_Data/90211009?rev=' id='Dashboard1' path='/workbooks/Cars_Data' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Car dekho' name='federated.0txxlry03zd4a510yl8910zqodeq' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0txxlry03zd4a510yl8910zqodeq'>
+        <column-instance column='[seats]' derivation='None' name='[none:seats:qk]' pivot='key' type='quantitative' />
+        <column caption='Seats' datatype='integer' name='[seats]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='98002' id='5' type-v2='layout-basic' w='89378' x='483' y='999'>
+              <zone h='51792' id='3' name='Sheet 1' w='33975' x='483' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#ff55ff' />
+                </zone-style>
+              </zone>
+              <zone h='46210' id='9' name='Sheet 12' w='25648' x='483' y='52791'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37448' id='12' name='Sheet 3' w='15480' x='53951' y='17862'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17521' id='14' name='Sheet 4' w='35910' x='53951' y='81480'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='51792' id='16' name='Sheet 5' w='19493' x='34458' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46210' id='17' name='Sheet 7' w='27820' x='26131' y='52791'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='26170' id='18' name='Sheet 6' w='35910' x='53951' y='55310'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='54311' id='19' name='Sheet 8' w='20430' x='69431' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='16863' id='21' type-v2='text' w='15480' x='53951' y='999'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontsize='18' underline='true'>Analysis of Cars Data</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98002' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='999'>
+              <zone fixed-size='124' h='16480' id='8' is-fixed='true' name='Sheet 1' pane-specification-id='1' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seller_type:nk]' type-v2='color' w='9656' x='89861' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='142' h='18727' id='10' is-fixed='true' name='Sheet 12' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9656' x='89861' y='17479'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='206' h='25341' id='11' is-fixed='true' name='Sheet 12' pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk]' type-v2='color' w='9656' x='89861' y='36206'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='97' h='13109' id='13' is-fixed='true' name='Sheet 3' pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' type-v2='size' w='9656' x='89861' y='61547'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='108' h='14482' id='15' is-fixed='true' name='Sheet 4' pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]' type-v2='color' w='9656' x='89861' y='74656'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='71' h='9863' id='20' is-fixed='true' name='Sheet 8' pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:owner:nk]' type-v2='color' w='9656' x='89861' y='89138'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2600' minheight='2600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98244' id='38' param='vert' type-v2='layout-flow' w='99034' x='483' y='878'>
+                <zone fixed-size='280' h='51921' id='3' is-fixed='true' name='Sheet 1' w='33977' x='483' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='124' h='14489' id='8' name='Sheet 1' pane-specification-id='1' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seller_type:nk]' type-v2='color' w='9656' x='89861' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51921' id='16' is-fixed='true' name='Sheet 5' w='19493' x='34460' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='16905' id='21' type-v2='text' w='15480' x='53953' y='878'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='18' underline='true'>Analysis of Cars Data</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54446' id='19' is-fixed='true' name='Sheet 8' w='20428' x='69433' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='8672' id='20' name='Sheet 8' pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:owner:nk]' type-v2='color' w='9656' x='89861' y='79582'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37541' id='12' is-fixed='true' name='Sheet 3' w='15480' x='53953' y='17783'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='97' h='11526' id='13' name='Sheet 3' pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' type-v2='size' w='9656' x='89861' y='55323'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='142' h='16465' id='10' name='Sheet 12' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9656' x='89861' y='15367'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46323' id='9' is-fixed='true' name='Sheet 12' w='25649' x='483' y='52799'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='206' h='23491' id='11' name='Sheet 12' pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk]' type-v2='color' w='9656' x='89861' y='31832'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46323' id='17' is-fixed='true' name='Sheet 7' w='27821' x='26132' y='52799'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='201' h='26235' id='18' is-fixed='true' name='Sheet 6' w='35908' x='53953' y='55324'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='133' h='17563' id='14' is-fixed='true' name='Sheet 4' w='35908' x='53953' y='81559'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='108' h='12733' id='15' name='Sheet 4' pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]' type-v2='color' w='9656' x='89861' y='66849'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7DFFC47B-C3CC-43B1-B7C4-8D5C38A13BCC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seller_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{60A3BDA6-8B21-4ABF-9195-4B1FF406315C}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[__tableau_internal_object_id__].[cnt:Car dekho.csv_B43718E081E843B59D8FF8763C8ACAAE:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4849E0C8-79D9-4289-8001-A222166DBE2C}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4DBD9EEE-CB6B-4EDA-BE0F-EABA28CCD874}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0BA8DB04-3FFE-44B5-96D2-A8D3DAE1B202}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{80B9EA71-3F38-4147-84D2-D626DD4F0BEF}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:transmission:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57B40667-6F12-4147-AAC5-14252AE3391C}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:owner:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9984526D-2FB9-46F0-BCCF-63F51F452A07}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:mileage:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FB213F0E-5060-4A72-B186-4DC5EDF19E1F}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:max_power:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0CED2077-A414-48FF-93A9-2620954AAFEA}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:seats:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0txxlry03zd4a510yl8910zqodeq].[none:fuel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84A8B8D1-80FA-4BA7-9016-B95CB284BDDB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 12'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6' />
+        <viewpoint name='Sheet 7'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{41FD7775-0868-40A8-9D81-90BAED4C9F98}' />
+    </window>
+  </windows>
+</workbook>
